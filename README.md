@@ -15,7 +15,7 @@ The [full list](#rbp-list) of contained RBPs is shown below.
 
 <br>
 
-#### Example Usage
+#### Example Usage (Full R-scripts and example data can be found on <https://doi.org/10.5281/zenodo.20162049>)
 
 ##### Overrepresentation analysis (ORA) with R/clusterProfiler
 
