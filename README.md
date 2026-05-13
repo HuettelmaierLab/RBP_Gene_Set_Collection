@@ -28,8 +28,8 @@ rbp = read.gmt("RBP_targets_GRCh38.114_v1.0.gmt")
 ## read list containing gene symbols
 genes = scan("genes.txt", what = "character")
 
-## perform ORA
-ora = enricher(gene = genes, TERM2GENE = rbp, pvalueCutoff = 1, 
+## perform ORA using all genes included in the collection as background genes (universe = NULL)
+ora = enricher(gene = genes, TERM2GENE = rbp, pvalueCutoff = 1, universe = NULL,
                pAdjustMethod = "fdr", qvalueCutoff = 1, minGSSize = 10, maxGSSize = Inf)
                
 ## view results
